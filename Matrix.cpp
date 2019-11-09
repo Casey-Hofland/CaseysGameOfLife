@@ -78,7 +78,7 @@ void Matrix::Draw() {
 	}
 
 	// Create a string filled with + on the iterators positions
-	std::string drawString = std::string( width * height , '.' );
+	std::string drawString = std::string( width * height , ' ' );
 	for( auto it = liveCellPositions.begin(); it != liveCellPositions.end(); it++ ) {
 		drawString[ (*it) ] = '+';
 	}

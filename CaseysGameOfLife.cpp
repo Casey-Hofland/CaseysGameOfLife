@@ -5,26 +5,15 @@
 #include <thread>
 #include "Cell.h"
 #include "Matrix.h"
+#include <wtypes.h>
 
 int main()
 {
+	// Move the console
+	const HWND console = GetConsoleWindow();
+	MoveWindow( console , 0 , 0 , 1280 , 720 , TRUE );
+
 	std::vector<Cell> cells;
-
-	/*
-	// Blinker
-	cells.push_back( Cell( 2 , 3 ) );
-	cells.push_back( Cell( 2 , 2 ) );
-	cells.push_back( Cell( 2 , 1 ) );
-	*/
-
-	/*
-	// Glider
-	cells.push_back( Cell( 2 , 3 ) );
-	cells.push_back( Cell( 3 , 4 ) );
-	cells.push_back( Cell( 3 , 5 ) );
-	cells.push_back( Cell( 2 , 5 ) );
-	cells.push_back( Cell( 1 , 5 ) );
-	*/
 
 	// Glider Gun
 
